@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productivity app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" id="main-container">
+        <h1>PRODUCTIVITY APP</h1>
+    </div>
+    <div class="container" id="inner-container">
+        <h2>ADD TASK</h2>
+        <p>GIVE DIFFRENT NAMES TO ALL TASKS</p>
+        <form id="task-form">
+            <div>
+                <label for="task-name">TASK NAME *</label>
+                <input type="text" id="task-name" class="u-full-width" required>
+            </div>
+            <div>
+                <input style="color: #fff;" type="submit" value="submit" class="btn">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr class="head_row">
+                    <th>TASK NAME</th>
+                    <th>STARTED TIME</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
